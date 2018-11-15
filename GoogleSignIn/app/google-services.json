@@ -1,0 +1,408 @@
+{
+  "project_info": {
+    "project_number": "966768277996",
+    "firebase_url": "https://fir-91538.firebaseio.com",
+    "project_id": "fir-91538",
+    "storage_bucket": "fir-91538.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:03f2ee37a89cd8f1",
+        "android_client_info": {
+          "package_name": "neeraj.com.cwp31"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-72g5hkafe2hvc870q8vftm38i8hg0o93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.cwp31",
+            "certificate_hash": "65e083a9fb847c2f3729dad4cea76e440fd2466c"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:824d7b6782217f62",
+        "android_client_info": {
+          "package_name": "neeraj.com.earning"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-l9rgq40f657iok7b5vuq5bpoilds767t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.earning",
+            "certificate_hash": "ff4abd3d79c67fa4998cb2d66098bfba226eae2b"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-6812385414145739~3620585978"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:25c6215450b23b39",
+        "android_client_info": {
+          "package_name": "neeraj.com.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-65408oqen57fgfhom8o05aks687fsl43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.firebase",
+            "certificate_hash": "65e083a9fb847c2f3729dad4cea76e440fd2466c"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:3ff0e63208a91caa",
+        "android_client_info": {
+          "package_name": "neeraj.com.firebase2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-4nk7jjr49oejavf2lp5fjgv0n5hvdlah.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.firebase2",
+            "certificate_hash": "65e083a9fb847c2f3729dad4cea76e440fd2466c"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:181ea9faaf567903",
+        "android_client_info": {
+          "package_name": "neeraj.com.firebase_push"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-o7c418ct5thnap6epid9mc3pf0kfpd4m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.firebase_push",
+            "certificate_hash": "ff4abd3d79c67fa4998cb2d66098bfba226eae2b"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:353a5b08628b8477",
+        "android_client_info": {
+          "package_name": "neeraj.com.firebasedemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-3vla03gkg9cr8b2t9insrho86pe5vh9f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.firebasedemo",
+            "certificate_hash": "ff4abd3d79c67fa4998cb2d66098bfba226eae2b"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:9a33bf4fe2d80d84",
+        "android_client_info": {
+          "package_name": "neeraj.com.firebaseimg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-34njnnmr48pnuveear4fc5fk5ccoob7s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.firebaseimg",
+            "certificate_hash": "65e083a9fb847c2f3729dad4cea76e440fd2466c"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:2cf671e7bba9765f",
+        "android_client_info": {
+          "package_name": "neeraj.com.googlesignin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-60pvsaj66c5i1slsh2gh61ik0vhpkbru.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.googlesignin",
+            "certificate_hash": "ff4abd3d79c67fa4998cb2d66098bfba226eae2b"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966768277996:android:30e7ae03b78724e6",
+        "android_client_info": {
+          "package_name": "neeraj.com.hwp8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966768277996-qqnuka9p86doh70jnguttmfjmvlg1v5v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "neeraj.com.hwp8",
+            "certificate_hash": "65e083a9fb847c2f3729dad4cea76e440fd2466c"
+          }
+        },
+        {
+          "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvBvlHcs4joPwMw-Qs9_zK3dPudGFhkfE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966768277996-ndgio1ii89bi791nnm96fenmgrgf7b24.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
