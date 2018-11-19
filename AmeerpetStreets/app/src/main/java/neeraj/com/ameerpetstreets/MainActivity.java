@@ -20,10 +20,14 @@ public class MainActivity extends AppCompatActivity
 {
     TextView textView1,textView2,textView3,textView4,textView5,textView6,textView7,textView8,textView9;
     String url="https://nareshit.in/course-schedule/";
+    String urlSathya="https://sathyatech.com/time-table/";
     ProgressDialog progressDialog;
     ArrayList course=new ArrayList();
     ArrayList faculty=new ArrayList();
     ArrayList date=new ArrayList();
+    ArrayList sathyaCourse=new ArrayList();
+    ArrayList sathyaFaculty=new ArrayList();
+    ArrayList sathyaDate=new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -51,6 +55,7 @@ public class MainActivity extends AppCompatActivity
         protected Void doInBackground(Void... voids)
         {
             try {
+                //NareshIt data Fetch Starts
                 Document document= Jsoup.connect(url).get();
                 Elements coursee=document.getElementsByClass("column-1");
                 Elements facultye=document.getElementsByClass("column-2");
@@ -60,7 +65,7 @@ public class MainActivity extends AppCompatActivity
                     String str=coursee.get(i).getElementsByAttribute("href").toString();
                     int index=str.indexOf(">");
                     str=str.substring(index+1,str.length()-4);
-                  course.add(str);
+                    course.add(str);
                 }
                 for (int i=1;i<facultye.size();i++)
                 {
@@ -76,7 +81,38 @@ public class MainActivity extends AppCompatActivity
                     str=str.substring(index+1,str.length()-5);
                     date.add(str);
                 }
+                //NareshIt Data Fetch Ends
 
+                //Sathya Data Fetch Starts
+
+                Document documentSathya=Jsoup.connect(urlSathya).get();
+                Elements sathyaData=documentSathya.getElementsByTag("td");
+                sathyaCourse.clear();
+                sathyaFaculty.clear();
+                sathyaDate.clear();
+                int flag=0;
+                for (Element element:sathyaData)
+                {
+                    flag++;
+                    //String strC=element.getElementsByAttributeValue("data-title=","Course Name").toString();
+                    if(flag==1)
+                    {
+                        String strC = element.attr("data-title=", "Course Name").ownText();
+                        sathyaCourse.add(strC);
+                    }
+                    else if(flag==2) {
+                        String strF = element.attr("data-title=", "Faculty Name").ownText();
+                        sathyaFaculty.add(strF);
+                    }
+                    else if(flag==3){
+                        String strD = element.attr("data-title=", "Start Date").ownText();
+                        sathyaDate.add(strD);
+                    }
+                    else if(flag==5)
+                    {
+                        flag=0;
+                    }
+                }
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -103,12 +139,27 @@ public class MainActivity extends AppCompatActivity
             textView1.setText(course.get(0).toString());
             textView2.setText(faculty.get(0).toString());
             textView3.setText(date.get(0).toString());
-            textView4.setText(course.get(1).toString());
-            textView5.setText(faculty.get(1).toString());
-            textView6.setText(date.get(1).toString());
-            textView7.setText(course.get(2).toString());
-            textView8.setText(faculty.get(2).toString());
-            textView9.setText(date.get(2).toString());
+//            textView4.setText(course.get(1).toString());
+//            textView5.setText(faculty.get(1).toString());
+//            textView6.setText(date.get(1).toString());
+//            textView7.setText(course.get(2).toString());
+//            textView8.setText(faculty.get(2).toString());
+//            textView9.setText(date.get(2).toString());
+//            textView1.setText(sathyaCourse.get(0).toString());
+//            textView2.setText(sathyaFaculty.get(0).toString());
+//            textView3.setText(sathyaDate.get(0).toString());
+            textView4.setText(sathyaCourse.get(1).toString());
+            textView5.setText(sathyaFaculty.get(1).toString());
+            textView6.setText(sathyaDate.get(1).toString());
+//            textView7.setText(sathyaCourse.get(2).toString());
+//            textView8.setText(sathyaFaculty.get(2).toString());
+//            textView9.setText(sathyaDate.get(2).toString());
+            /*Log.e("Sathya Course==>",sathyaCourse.get(0).toString());
+            Log.e("Sathya Faculty==>",sathyaFaculty.get(0).toString());
+            Log.e("Sathya Date==>",sathyaDate.get(0).toString());
+            Log.e("Sathya Course==>",sathyaCourse.get(2).toString());
+            Log.e("Sathya Faculty==>",sathyaFaculty.get(2).toString());
+            Log.e("Sathya Date==>",sathyaDate.get(2).toString());*/
             progressDialog.dismiss();
         }
     }
