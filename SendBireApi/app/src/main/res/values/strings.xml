@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SendBireApi</string>
+    <string name="APP_ID">2CCACA60-36C6-4E9B-9A9A-14BFB782A01D</string>
+    <string name="USER_ID">ncneeraj79@gmail.com</string>
+    <string name="CHANNEL_URL">https://api.sendbird.com</string>
+</resources>
