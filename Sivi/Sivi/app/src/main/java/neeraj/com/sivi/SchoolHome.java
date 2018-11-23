@@ -1,11 +1,13 @@
 package neeraj.com.sivi;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 
 /**
@@ -13,7 +15,7 @@ import android.view.ViewGroup;
  */
 public class SchoolHome extends Fragment
 {
-
+    Context appContext;
 
     public SchoolHome() {
         // Required empty public constructor
@@ -25,7 +27,38 @@ public class SchoolHome extends Fragment
                              Bundle savedInstanceState)
     {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_school_home, container, false);
+
+        View view= inflater.inflate(R.layout.fragment_school_home, container, false);
+        view.findViewById(R.id.feeib).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(appContext, "Fee Selected", Toast.LENGTH_SHORT).show();
+            }
+        });
+        view.findViewById(R.id.noticeib).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(appContext, "Notice Selected", Toast.LENGTH_SHORT).show();
+            }
+        });
+        view.findViewById(R.id.attib).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(appContext, "Attendance Selected", Toast.LENGTH_SHORT).show();
+            }
+        });
+        view.findViewById(R.id.ttib).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(appContext, "TimeTableS Selected", Toast.LENGTH_SHORT).show();
+            }
+        });
+        return view;
     }
 
+    @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        appContext=context;
+    }
 }

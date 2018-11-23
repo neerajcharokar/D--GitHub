@@ -25,13 +25,16 @@ public class LoginHomeActivity extends Activity
     public void schoolLogin(View view)
     {
         startActivity(new Intent(this,SchoolRegistration.class));
+        finish();
     }
     public void teachersLogin(View view)
     {
         startActivity(new Intent(this,TeacherRegistration.class));
+        finish();
     }
     public void parentsLogin(View view)
     {
         startActivity(new Intent(this,ParentsRegistration.class));
+        finish();
     }
 }
