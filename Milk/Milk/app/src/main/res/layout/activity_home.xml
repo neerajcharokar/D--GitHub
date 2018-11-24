@@ -1,0 +1,87 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<TableLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/home_activity"
+    android:gravity="center"
+    android:stretchColumns="1"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow
+        android:layout_margin="15dp">
+
+        <Button
+            android:id="@+id/farmer_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/farmer2"
+            android:fontFamily="sans-serif-condensed"
+            android:onClick="farmerButton"
+            android:text="Farmer"
+            android:layout_margin="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/payment_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/payment"
+            android:fontFamily="monospace"
+            android:onClick="paymentButton"
+            android:text="Payment"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </TableRow>
+    <TableRow
+        android:layout_margin="15dp">
+        <Button
+            android:id="@+id/setting_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/setting"
+            android:fontFamily="monospace"
+            android:onClick="settingButton"
+            android:text="Setting"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/report_button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/report3"
+            android:fontFamily="monospace"
+            android:onClick="reportButton"
+            android:text="Reports"
+            android:textAllCaps="false"
+            android:textColor="@color/text_color"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </TableRow>
+</TableLayout>
+</LinearLayout>
