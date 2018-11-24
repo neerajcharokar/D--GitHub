@@ -42,7 +42,7 @@ public class SchoolHomePage extends AppCompatActivity
         navigationView=findViewById(R.id.navigationView);
         View hView=navigationView.getHeaderView(0);
         tvName=hView.findViewById(R.id.textname);
-        tvName.setText("SIVI");
+        tvName.setText("School");
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item)
@@ -52,6 +52,12 @@ public class SchoolHomePage extends AppCompatActivity
                     case R.id.setting: {
                         item.setChecked(true);
                         Toast.makeText(SchoolHomePage.this, "Group Selected", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawers();
+                        return true;
+                    }
+                    case R.id.AboutUs: {
+                        item.setChecked(true);
+                        Toast.makeText(SchoolHomePage.this, "App Developed by: Neeraj Charokar", Toast.LENGTH_SHORT).show();
                         drawerLayout.closeDrawers();
                         return true;
                     }

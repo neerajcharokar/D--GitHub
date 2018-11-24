@@ -55,6 +55,12 @@ public class TeacherHomePage extends AppCompatActivity
                         drawerLayout.closeDrawers();
                         return true;
                     }
+                    case R.id.AboutUs: {
+                        item.setChecked(true);
+                        Toast.makeText(TeacherHomePage.this, "App Developed by: Neeraj Charokar", Toast.LENGTH_SHORT).show();
+                        drawerLayout.closeDrawers();
+                        return true;
+                    }
                     case R.id.logout:
                     {
                         item.setChecked(true);
@@ -79,7 +85,7 @@ public class TeacherHomePage extends AppCompatActivity
                 switch (tab.getPosition())
                 {
                     case 0:
-                        getSupportFragmentManager().beginTransaction().add(R.id.homePageFragment,new SchoolHome()).commit();
+                        getSupportFragmentManager().beginTransaction().add(R.id.homePageFragment,new TeacherHome()).commit();
                         break;
                     case 1:
                         getSupportFragmentManager().beginTransaction().add(R.id.homePageFragment,new TeacherAttandance()).commit();
@@ -114,7 +120,7 @@ public class TeacherHomePage extends AppCompatActivity
             switch (position)
             {
                 case 0:
-                    return new SchoolHome();
+                    return new TeacherHome();
                 case 1:
                     return new TeacherAttandance();
                 case 2:

@@ -17,7 +17,7 @@
             android:layout_height="0dp"
             android:layout_weight="1"
             android:id="@+id/hwiv"
-            android:src="@drawable/camera"/>
+            android:src="@drawable/camera2"/>
         <Button
             android:id="@+id/submitHw"
             android:layout_width="match_parent"

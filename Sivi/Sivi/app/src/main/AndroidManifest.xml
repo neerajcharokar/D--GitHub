@@ -28,7 +28,9 @@
         <activity android:name=".RegistrationPage" />
         <activity android:name=".SchoolHomePage" />
         <activity android:name=".TeacherHomePage" />
-        <activity android:name=".ParentsHomePage"></activity>
+        <activity android:name=".ParentsHomePage" />
+        <activity android:name=".CalenderActivity" />
+        <activity android:name=".DocumentScanner"></activity>
     </application>
 
 </manifest>

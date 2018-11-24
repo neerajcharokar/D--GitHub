@@ -6,6 +6,10 @@
         android:icon="@drawable/settings"
         android:title="Group"/>
     <item
+        android:id="@+id/AboutUs"
+        android:icon="@drawable/aboutus"
+        android:title="AboutUs"/>
+    <item
         android:id="@+id/logout"
         android:icon="@drawable/logout"
         android:title="Logout"
