@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity
     ProgressDialog progressDialog;
     ListView listView;
     ArrayList course=new ArrayList();
+    ArrayList sathyaCourse=new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity
         @Override
         protected Void doInBackground(Void... voids)
         {
-            try
+            /*try
             {
                 //NareshIt Data Fetch Starts
                 Document document =Jsoup.connect(getString(R.string.nareshit_url)).get();
@@ -57,7 +58,31 @@ public class MainActivity extends AppCompatActivity
             } catch (IOException e)
             {
                 e.printStackTrace();
+            }*/
+            //Sathya Data Fetch
+            try
+            {
+                Document document=Jsoup.connect(getString(R.string.sathya_url)).get();
+                //<div class="fusion-text">
+                int length=document.select("div[class=fusion-text]").size();
+                Log.e("Length==>",""+length);
+                for(int j=0;j<100;j++)
+                {
+                    //<table class="col-md-12 table-bordered table-striped table-condensed cf"
+                    //<td data-title="Course Name">
+                    Elements coursee=document.select("table[class=col-md-12 table-bordered table-striped table-condensed cf]")
+                            .select("td[data-title=Course Name]").eq(j);
+                    for (int i=0;i<coursee.size();i++)
+                    {
+                        //String str=coursee.get(i).getElementsByAttribute("href").toString();
+                        String str=coursee.text();
+                        sathyaCourse.add(str);
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
+
             return null;
         }
 
@@ -73,11 +98,11 @@ public class MainActivity extends AppCompatActivity
         protected void onPostExecute(Void aVoid)
         {
             super.onPostExecute(aVoid);
-            ArrayAdapter aa=new ArrayAdapter(MainActivity.this,android.R.layout.simple_dropdown_item_1line,course);
+            ArrayAdapter aa=new ArrayAdapter(MainActivity.this,android.R.layout.simple_dropdown_item_1line,sathyaCourse);
             listView.setAdapter(aa);
             for(int i=0;i<course.size();i++)
-            Log.e("Course==>",course.get(i).toString());
-            Log.e("Course size",""+course.size());
+            Log.e("Course==>",sathyaCourse.get(i).toString());
+            Log.e("Course size",""+sathyaCourse.size());
             progressDialog.dismiss();
         }
     }
