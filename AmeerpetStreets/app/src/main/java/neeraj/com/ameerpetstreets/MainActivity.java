@@ -12,6 +12,7 @@ import android.widget.ListView;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -21,8 +22,11 @@ public class MainActivity extends AppCompatActivity
 {
     ProgressDialog progressDialog;
     ListView listView;
+    Elements coursee;
     ArrayList course=new ArrayList();
     ArrayList sathyaCourse=new ArrayList();
+    ArrayList durgaCourse=new ArrayList();
+    ArrayList inetSolvCourse=new ArrayList();
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -60,29 +64,68 @@ public class MainActivity extends AppCompatActivity
                 e.printStackTrace();
             }*/
             //Sathya Data Fetch
-            try
+            /*try
             {
                 Document document=Jsoup.connect(getString(R.string.sathya_url)).get();
-                //<div class="fusion-text">
                 int length=document.select("div[class=fusion-text]").size();
                 Log.e("Length==>",""+length);
                 for(int j=0;j<100;j++)
                 {
-                    //<table class="col-md-12 table-bordered table-striped table-condensed cf"
-                    //<td data-title="Course Name">
                     Elements coursee=document.select("table[class=col-md-12 table-bordered table-striped table-condensed cf]")
                             .select("td[data-title=Course Name]").eq(j);
                     for (int i=0;i<coursee.size();i++)
                     {
-                        //String str=coursee.get(i).getElementsByAttribute("href").toString();
                         String str=coursee.text();
                         sathyaCourse.add(str);
                     }
                 }
             } catch (IOException e) {
                 e.printStackTrace();
-            }
+            }*/
+            /*try {
+                Document document=Jsoup.connect(getString(R.string.durga_url)).get();
+                for(int j=0;j<100;j++)
+                {
+                    *//*Elements coursee=document.select("tbody").select("tr").select("td[height=30]")
+                            .select("div[align=center]").select("p").eq(j);*//*
+                    Elements coursee=document.select("div[align=center]").eq(j);
+                    for (int i=0;i<coursee.size();i++)
+                    {
+                        String str=coursee.select("strong").select("a").text();
+                        durgaCourse.add(str);
+                    }
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }*/
+            try
+            {
+                //<div class="col-md-12 col-sm-12 col-xs-12 table-responsive">
+                //<div class="col-md-12 col-sm-12 col-xs-12 table-responsive">
+                Document document=Jsoup.connect(getString(R.string.inetSolv_url)).get();
 
+                for(int j=0;j<100;j++)
+                {
+                    //<td style="color:#000000" id="844">Oracle 18C/12C</td>
+                        //coursee=document.select("div[col-md-12 col-sm-12 col-xs-12 table-responsive]").eq(0);
+                    Element courseee=document.select("tbody").get(1);
+
+                    //for (int i=0;i<courseee.size();i++)
+                    //{
+                        //<tr style="color:#000000;background-color:#ffffff">
+                        //<td style="color:#000000"
+                        Elements rows=courseee.getElementsByTag("tr");
+                        for(Element row: rows)
+                        {
+                            String str=row.toString();
+                            inetSolvCourse.add(str);
+                        }
+                    //}
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
             return null;
         }
 
@@ -98,11 +141,13 @@ public class MainActivity extends AppCompatActivity
         protected void onPostExecute(Void aVoid)
         {
             super.onPostExecute(aVoid);
-            ArrayAdapter aa=new ArrayAdapter(MainActivity.this,android.R.layout.simple_dropdown_item_1line,sathyaCourse);
+            ArrayAdapter aa=new ArrayAdapter(MainActivity.this,android.R.layout.simple_dropdown_item_1line,inetSolvCourse);
             listView.setAdapter(aa);
             for(int i=0;i<course.size();i++)
-            Log.e("Course==>",sathyaCourse.get(i).toString());
-            Log.e("Course size",""+sathyaCourse.size());
+            Log.e("Course==>",inetSolvCourse.get(i).toString());
+            Log.e("Course size",""+inetSolvCourse.size());
+            //Log.e("Coursee==>",""+coursee.toString());
+            //Log.e("Coursee size",""+coursee.size());
             progressDialog.dismiss();
         }
     }

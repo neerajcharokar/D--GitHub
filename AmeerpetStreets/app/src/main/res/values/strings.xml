@@ -2,4 +2,6 @@
     <string name="app_name">AmeerpetStreets</string>
     <string name="nareshit_url">https://nareshit.in/course-schedule/</string>
     <string name="sathya_url">https://sathyatech.com/time-table/</string>
+    <string name="durga_url">http://www.durgasoft.com/#durga</string>
+    <string name="inetSolv_url">http://www.inetsolv.info/newbatches.php</string>
 </resources>

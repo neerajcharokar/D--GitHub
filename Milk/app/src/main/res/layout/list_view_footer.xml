@@ -1,0 +1,33 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lvheader"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/project_color"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/text_view_style"
+                android:text="Total Amount :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/text_view_style"
+                android:id="@+id/footer_total"
+                android:background="#4ba100"/>
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/text_view_style"
+                android:text="Advance :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/footer_advance"
+                style="@style/text_view_style"
+                android:background="#4ba100"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
